@@ -13,4 +13,4 @@ OCRmyPDF 项目地址： https://github.com/jbarlow83/OCRmyPDF
 Demo
 ```
 @ocrmypdf "$input-file-name" "$outout-file-name" -l chi_sim+eng --force-ocr
-``
+```
