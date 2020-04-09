@@ -1,6 +1,12 @@
 #!/bin/sh
 #!/bin/bash
 
+# --------------- #
+# Autor: jsmjsm
+# 20200409
+# Version 1.0.0
+# -------------- #
+
 # REQUIREMENT: brew,wget,grep
 
 ## check: Homebrew
@@ -53,6 +59,7 @@ install_ocrmypdf(){
 fi
 }
 
+# Download Language Package
 download_language_package(){
 echo '🔍 FINDING PACKAGE:' '\033[34m' $2 '\033[0m'
 if [ ! -f "$1$2" ]; then
@@ -79,6 +86,7 @@ echo " "
 tess_version=$(tesseract --version | grep tesseract | grep -Eo '(\d{1,3}\.){1,3}\d') && echo '💡 Tessercat version:' $tess_version
 # get tessercat(for ocrmypdf) language package path
 tess_data_loc='/usr/local/Cellar/tesseract/'$tess_version'/share/tessdata/' && echo '💡 Tesseract lanaguae data path:' $tess_data_loc
+
 echo " "
 # language choose default: chinese simplified 目前仅提供简体中文和英文安装
 CHlanguage='chi_sim.traineddata'
@@ -87,15 +95,9 @@ ENlanguage='eng.traineddata'
 ### (support language choose in the future)
 
 ##  download the lanaguae package to the path
-# echo '⬇️ Downloading Chinese(simplified) Language Package ....'
-# echo 'PATH:' $tess_data_loc
-#wget -P $tess_data_loc https://raw.githubusercontent.com/tesseract-ocr/tessdata/master/$CHlanguage
 download_language_package $tess_data_loc $CHlanguage
 download_language_package $tess_data_loc $ENlanguage
-#echo '⬇️ Downloading English Language Package ....'
-#wget -P $tess_data_loc https://raw.githubusercontent.com/tesseract-ocr/tessdata/master/$ENlanguage
-#echo 'Downloading Chinese(tyraditional) Language Package ....'
-#wget -P $tess_data_loc https://raw.githubusercontent.com/tesseract-ocr/tessdata/master/$CH_TRAlanguage
+
 echo " "
 echo '👏 \033[32m INSTALL SUCCESS, ENJOY YOUR OCRMYPDF! \033[0m '
 echo '❓ \033[34m USE' \'ocrmypdf --help\' 'TO GET HELP~ \033[0m '
