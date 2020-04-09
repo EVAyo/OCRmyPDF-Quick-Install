@@ -102,4 +102,5 @@ echo " "
 echo '👏 \033[32m INSTALL SUCCESS, ENJOY YOUR OCRMYPDF! \033[0m '
 echo '❓ \033[34m USE' \'ocrmypdf --help\' 'TO GET HELP~ \033[0m '
 
-
+# Delete my self
+/bin/rm $0
