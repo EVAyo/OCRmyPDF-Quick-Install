@@ -9,7 +9,7 @@ curl https://raw.githubusercontent.com/jsmjsm/OCRmyPDF-Quick-Install/master/quic
 ### Reference
 OCRmyPDF 项目地址： https://github.com/jbarlow83/OCRmyPDF
 
-### How to use
+### How to use OCRmyPDF ?
 Demo
 ```
 @ocrmypdf "$input-file-name" "$outout-file-name" -l chi_sim+eng --force-ocr
