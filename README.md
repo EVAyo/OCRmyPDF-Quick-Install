@@ -1,5 +1,5 @@
-# OCRMYPDF Quick Install
-适用于 MacOS 的 ocrmypdf 一键安装脚本
+# OCRmyPDF Quick Install
+适用于 MacOS 的 OCRmyPDF 一键安装脚本
 自动下载 中/英 语言包
 ## Usage 
 ```
