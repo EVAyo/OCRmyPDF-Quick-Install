@@ -72,7 +72,7 @@ fi
 }
 
 # ----------MAIN ----------
-echo '\033[32m WELCOME QUICK INSTALL OCRMYPDF, Version: 1.0.0 \033[0m'
+echo '\033[32m WELCOME TO QUICK INSTALL OCRMYPDF, Version: 1.0.0 \033[0m'
 
 echo '---💻 MacOS System Version 💻---'
 sw_vers
