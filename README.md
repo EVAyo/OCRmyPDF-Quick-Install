@@ -5,7 +5,6 @@
 ```
 curl https://raw.githubusercontent.com/jsmjsm/ocrmypdf-install/master/quick-install-ocrmypdf.sh -o quick-install-ocrmypdf.sh && chmod 777 ./quick-install-ocrmypdf.sh && ./quick-install-ocrmypdf.sh && rm ./quick-install-ocrmypdf.sh
 ```
-使用效果
-
+![使用效果](https://raw.githubusercontent.com/jsmjsm/ocrmypdf-install/master/demo.jpg)
 ### Reference
 OCRmyPDF 项目地址： https://github.com/jbarlow83/OCRmyPDF
