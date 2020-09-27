@@ -103,7 +103,7 @@ install_wget(){
     echo '👌 \033[32m wget has been installed\033[0m '
   else
     echo '🍼  Installing wget ...'
-    install wget
+    brew install wget
     if [[ $? -eq 0  ]]; then
       echo '🍻  wget install SUCCESS'
     else
