@@ -120,7 +120,7 @@ install_ocrmypdf(){
     echo '👌 \033[32m ocrmypdf has been installed \033[0m'
   else
     echo '🍼  Installing ocrmypdf ...'
-    install ocrmypdf
+    brew install ocrmypdf
     if [[ $? -eq 0  ]]; then
       echo '🍻  ocrmypdf install SUCCESS'
     else
